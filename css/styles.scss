@@ -1,5 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+@import 'ultilities';
+
+//  Primary
+$dark-magenta: hsl(300, 43%, 22%);
+$soft-pink: hsl(333, 80%, 67%);
+
+// ### Neutral
+
+$dark-grayish-magenta: hsl(303, 10%, 53%);
+$light-grayish-magenta: hsl(300, 24%, 96%);
+$white: hsl(0, 0%, 100%);
+
+
+
 body {
-    margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Spartan', sans-serif;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 48px;
+    color: $dark-magenta;
+}
+
+.buyer {
+    display: flex;
+    gap: 10px;
+
+    h3 {
+        color: $white;
+        margin-bottom: 5px;
+    }
+    p {
+        color: $soft-pink;
+    }
+}
+.profile {
+    border-radius: 50%;
+    width: 40px;
+
+}
+.profile-card {
+    background-color: $dark-magenta;
+    padding: 30px;
+    border-radius: 20px;
+    height: 60%;
+}
+.first-p {
+    color: $dark-grayish-magenta;
+    padding-right: 20px;
+}
+
+.second-p {
+    color: $light-grayish-magenta;
+    font-size: 11px;
+    line-height: 1.7;
+}
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.first {
+    margin: 20px 0;
+    margin-top: 120px;
+}
+.second {
+    
+}
+
+.ali-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+// 5 Star Rating
+.rate-stars {
+    
+}
+.rating {
+    display: flex;
+    background-color: $light-grayish-magenta;
+    margin: 20px 0;
+    border-radius: 10px;
+    padding: 15px 20px;
+    width:85%;
+    
+    
+    .star {
+        margin-right: 10px;
+    }
+    .rated {
+        font-weight: bold;
+        color: $dark-magenta;
+    }
+}
+
+// Star movements 
+.star-2 {
+    margin-left: 20px;
+}
+.star-3 {
+    margin-left: 40px;
+}
+
+// Card movements
+.card-2 {
+    margin-top: 20px;
+}
+.card-3 {
+    margin-top: 40px;
+}
+
+// Background images 
+.top-desk {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -100;
+}
+.bottom-desk {
+    position: absolute;
+    top: 150px;
+    bottom: 0;
+    right: 0;
+    z-index: -100;
+}
+
+//margin 0 
+.ma-0 {
+    margin: 0;
+}
+
+// third section 
+.third {
+    padding: 40px 0;
+    text-align: center;
+
+    .social a {
+        margin: 0 10px;
+    }
+    
 }

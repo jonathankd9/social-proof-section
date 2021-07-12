@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
+.my-1 {
+  margin: 1rem 0;
+}
+
+.my-2 {
+  margin: 1.5rem 0;
+}
+
+.my-3 {
+  margin: 2rem 0;
+}
+
+.my-4 {
+  margin: 3rem 0;
+}
+
+.my-5 {
+  margin: 4rem 0;
+}
+
+.m-1 {
+  margin: 1rem;
+}
+
+.m-2 {
+  margin: 1.5re;
+}
+
+.m-3 {
+  margin: 2re;
+}
+
+.m-4 {
+  margin: 3rem;
+}
+
+.m-5 {
+  margin: 4rem;
+}
+
+.py-1 {
+  padding: 1rem 0;
+}
+
+.py-2 {
+  padding: 1.5rem 0;
+}
+
+.py-3 {
+  padding: 2rem 0;
+}
+
+.py-4 {
+  padding: 3rem 0;
+}
+
+.py-5 {
+  padding: 4rem 0;
+}
+
+.p-1 {
+  padding: 1rem;
+}
+
+.p-2 {
+  padding: 1.5rem;
+}
+
+.p-3 {
+  padding: 2rem;
+}
+
+.p-4 {
+  padding: 3rem;
+}
+
+.p-5 {
+  padding: 4rem;
+}
+
+.lead {
+  font-size: 20px;
+}
+
+.sm {
+  font-size: 1rem;
+}
+
+.md {
+  font-size: 2rem;
+}
+
+.lg {
+  font-size: 3rem;
+}
+
+.xl {
+  font-size: 4rem;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Spartan', sans-serif;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 48px;
+  color: #502050;
+}
+
+.buyer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+
+.buyer h3 {
+  color: white;
+  margin-bottom: 5px;
+}
+
+.buyer p {
+  color: #ee68a4;
+}
+
+.profile {
+  border-radius: 50%;
+  width: 40px;
+}
+
+.profile-card {
+  background-color: #502050;
+  padding: 30px;
+  border-radius: 20px;
+  height: 60%;
+}
+
+.first-p {
+  color: #937b92;
+  padding-right: 20px;
+}
+
+.second-p {
+  color: #f7f2f7;
+  font-size: 11px;
+  line-height: 1.7;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.first {
+  margin: 20px 0;
+  margin-top: 120px;
+}
+
+.ali-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #f7f2f7;
+  margin: 20px 0;
+  border-radius: 10px;
+  padding: 15px 20px;
+  width: 85%;
+}
+
+.rating .star {
+  margin-right: 10px;
+}
+
+.rating .rated {
+  font-weight: bold;
+  color: #502050;
+}
+
+.star-2 {
+  margin-left: 20px;
+}
+
+.star-3 {
+  margin-left: 40px;
+}
+
+.card-2 {
+  margin-top: 20px;
+}
+
+.card-3 {
+  margin-top: 40px;
+}
+
+.top-desk {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -100;
+}
+
+.bottom-desk {
+  position: absolute;
+  top: 150px;
+  bottom: 0;
+  right: 0;
+  z-index: -100;
+}
+
+.ma-0 {
+  margin: 0;
+}
+
+.third {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.third .social a {
+  margin: 0 10px;
+}
+/*# sourceMappingURL=styles.css.map */
