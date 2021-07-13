@@ -278,11 +278,13 @@ h1 {
     }
     .bottom-desk {
         visibility: hidden;
+        
     }
 
     .top-mobile {
         position: absolute;
         visibility: visible;
+        width: 100%;
         top: 0;
         left: 0;
         z-index: 5;
@@ -290,6 +292,7 @@ h1 {
     .bottom-mobile {
         position: absolute;
         visibility: visible;
+        width: 100%;
         top: 300px;
         bottom: 0;
         right: 0;
