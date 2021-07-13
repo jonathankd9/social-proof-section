@@ -12,11 +12,13 @@ $dark-grayish-magenta: hsl(303, 10%, 53%);
 $light-grayish-magenta: hsl(300, 24%, 96%);
 $white: hsl(0, 0%, 100%);
 
-
-
-body {
+* {
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
+}
+
+body {
     font-family: 'Spartan', sans-serif;
 }
 
@@ -29,6 +31,7 @@ h1 {
 .buyer {
     display: flex;
     gap: 10px;
+    margin-bottom: 10px;
 
     h3 {
         color: $white;
@@ -47,7 +50,7 @@ h1 {
     background-color: $dark-magenta;
     padding: 30px;
     border-radius: 20px;
-    height: 60%;
+    height: 80%;
 }
 .first-p {
     color: $dark-grayish-magenta;
@@ -67,9 +70,7 @@ h1 {
     margin: 20px 0;
     margin-top: 120px;
 }
-.second {
-    
-}
+
 
 .ali-center {
     justify-content: center;
@@ -140,6 +141,22 @@ h1 {
     z-index: -100;
 }
 
+.top-mobile {
+    position: absolute;
+    visibility: hidden;
+    top: 0;
+    left: 0;
+    z-index: -100;
+}
+.bottom-mobile {
+    position: absolute;
+    visibility: hidden;
+    top: 0;
+    left: 0;
+    z-index: -100;
+}
+
+
 //margin 0 
 .ma-0 {
     margin: 0;
@@ -160,13 +177,15 @@ h1 {
 
 @media (max-width: 375px) {
 
+
     body {
-        width: 80%;
+        width: 90%;
+        margin: 0;
+        padding: 0;
         margin: 0 auto;
     }
-    
     .first {
-        margin: 20px 0;
+        margin: 50px 0 0 0;
     }
     .grid {
         display: grid;
@@ -176,12 +195,11 @@ h1 {
         font-weight: 700;
         font-size: 32px;
         text-align: center;
-        
     }
     .first-p {
         text-align: center;
         font-size: 15px;
-        padding: 0 15px;
+        padding: 0px;
     }
     .rate-stars {
     
@@ -193,9 +211,8 @@ h1 {
         background-color: $light-grayish-magenta;
         margin: 20px 0;
         border-radius: 10px;
-        padding: 15px 20px;
-        width:85%;
-        
+        padding: 15px 0;
+        width:100%;
         
         .star {
             margin: 0 10px 10px 0;
@@ -209,20 +226,66 @@ h1 {
     .grid-3 {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        gap: 15px;
+        gap: 20px;
     }
 
     .profile-card {
         padding: 30px;
         border-radius: 20px;
-        height: 80%;
+        height: 100%;
     }
 
+    .buyer {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 10px;
+    
+        h3 {
+            color: $white;
+            margin-bottom: 5px;
+        }
+        p {
+            color: $soft-pink;
+        }
+    }
 
+    .third {
+        padding: 40px 0;
+        text-align: center;
+    
+        .social a {
+            margin: 0 5px;
+        }
+        
+    }
+    .card-2 {
+        margin-top: 0px;
+    }
+    .card-3 {
+        margin-top: 0px;
+    }
     .top-desk {
         visibility: hidden;
     }
     .bottom-desk {
         visibility: hidden;
     }
+
+    .top-mobile {
+        position: absolute;
+        visibility: visible;
+        top: 0;
+        left: 0;
+        z-index: 5;
+    }
+    .bottom-mobile {
+        position: absolute;
+        visibility: visible;
+        top: 300px;
+        bottom: 0;
+        right: 0;
+        z-index: -100;
+    }
+
+    
 }
