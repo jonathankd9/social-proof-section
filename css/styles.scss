@@ -183,12 +183,13 @@ h1 {
         width: 90%;
         margin: 0;
         padding: 0;
-        //margin: 0 auto;
-        margin: auto;
+        margin: 0 auto;
+        //margin: auto;
     }
     .container {
         max-width: 100%;
         margin: 0 auto;
+        padding: auto;
     }
     .first {
         margin: 50px 0 0 0;
@@ -272,6 +273,8 @@ h1 {
     }
     .top-desk {
         visibility: hidden;
+        height: 0;  //dp
+        width: 0;   //dp
     }
     .bottom-desk {
         visibility: hidden;

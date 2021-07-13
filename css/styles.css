@@ -100,14 +100,14 @@
 }
 
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
 body {
   font-family: 'Spartan', sans-serif;
+  width: 80%;
 }
 
 h1 {
@@ -117,8 +117,6 @@ h1 {
 }
 
 .buyer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 10px;
   margin-bottom: 10px;
@@ -167,32 +165,22 @@ h1 {
 }
 
 .ali-center {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .grid {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .grid-3 {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 
 .rating {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   background-color: #f7f2f7;
   margin: 20px 0;
@@ -270,21 +258,24 @@ h1 {
   margin: 0 10px;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 500px) {
   body {
     width: 90%;
     margin: 0;
     padding: 0;
     margin: 0 auto;
   }
+  .container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: auto;
+  }
   .first {
     margin: 50px 0 0 0;
   }
   .grid {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
   h1 {
     font-weight: 700;
@@ -297,10 +288,8 @@ h1 {
     padding: 0px;
   }
   .rating {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     text-align: center;
     background-color: #f7f2f7;
     margin: 20px 0;
@@ -317,10 +306,8 @@ h1 {
     color: #502050;
   }
   .grid-3 {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 20px;
   }
   .profile-card {
@@ -329,8 +316,6 @@ h1 {
     height: 100%;
   }
   .buyer {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     gap: 10px;
     margin-bottom: 10px;
@@ -357,6 +342,8 @@ h1 {
   }
   .top-desk {
     visibility: hidden;
+    height: 0;
+    width: 0;
   }
   .bottom-desk {
     visibility: hidden;
@@ -377,4 +364,3 @@ h1 {
     z-index: -100;
   }
 }
-/*# sourceMappingURL=styles.css.map */
